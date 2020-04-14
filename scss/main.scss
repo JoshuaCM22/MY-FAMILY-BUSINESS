@@ -1,0 +1,153 @@
+$my1stColor: #2690d4;
+$my2ndColor: #fff;
+$my3rdColor: #ccc;
+$my4thColor: #000;
+$my5thColor: #333;
+$my6thColor: #eaeaea;
+$my7thColor: #aaa;
+$my8thColor: #1a5276;
+$myFontStyles: Arial, Helvetica, sans-serif;
+$myFontSize: 1.1em;
+$myLineHeight: 1.5;
+
+body {
+  font-family: $myFontStyles;
+  font-size: $myFontSize;
+  line-height: $myLineHeight;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2,
+h3 p {
+  padding: 1em 0;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+#mainHeader {
+  background: $my2ndColor;
+  color: $my1stColor;
+}
+
+#mainNavigation {
+  background: $my3rdColor;
+  color: $my4thColor;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#mainNavigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mainNavigation li {
+  display: inline;
+  padding: 5px 10px;
+}
+
+#mainNavigation a {
+  color: $my4thColor;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#mainNavigation li:hover {
+  background: $my7thColor;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#showCase {
+  min-height: 450px;
+  color: $my2ndColor;
+  background: $my5thColor;
+}
+
+#showCase .contentWrap,
+#sectionAboutUs .contentWrap {
+  padding: 0 1.5em;
+}
+
+#sectionAboutUs {
+  background: $my6thColor;
+  color: $my5thColor;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#sectionPromotionLines {
+  background: $my8thColor;
+  color: $my2ndColor;
+  padding: 2em;
+}
+
+#sectionProducts {
+  padding: 1em 1em 1em;
+  background: $my5thColor;
+}
+
+#sectionProducts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sectionProducts li {
+  margin-bottom: 1em;
+  background: $my8thColor;
+  color: $my2ndColor;
+}
+
+.cardContent {
+  padding: 1.5em;
+}
+
+#mainFooter {
+  background: $my2ndColor;
+  color: $my1stColor;
+  padding: 35px;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+  .contentWrap,
+  #sectionProducts ul {
+    grid-column: 2/4;
+  }
+  #sectionProducts ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #sectionProducts li {
+    width: 31%;
+  }
+}
+
+@media (max-width: 700px) {
+  #showCase {
+    padding-top: 1px;
+  }
+}

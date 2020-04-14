@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2,
+h3 p {
+  padding: 1em 0;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+#mainHeader {
+  background: #fff;
+  color: #2690d4;
+}
+
+#mainNavigation {
+  background: #ccc;
+  color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#mainNavigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mainNavigation li {
+  display: inline;
+  padding: 5px 10px;
+}
+
+#mainNavigation a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#mainNavigation li:hover {
+  background: #aaa;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#showCase {
+  min-height: 450px;
+  color: #fff;
+  background: #333;
+}
+
+#showCase .contentWrap,
+#sectionAboutUs .contentWrap {
+  padding: 0 1.5em;
+}
+
+#sectionAboutUs {
+  background: #eaeaea;
+  color: #333;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#sectionPromotionLines {
+  background: #1a5276;
+  color: #fff;
+  padding: 2em;
+}
+
+#sectionProducts {
+  padding: 1em 1em 1em;
+  background: #333;
+}
+
+#sectionProducts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sectionProducts li {
+  margin-bottom: 1em;
+  background: #1a5276;
+  color: #fff;
+}
+
+.cardContent {
+  padding: 1.5em;
+}
+
+#mainFooter {
+  background: #fff;
+  color: #2690d4;
+  padding: 35px;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr (minmax(auto, 25em))[2] 1fr;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+  .contentWrap,
+  #sectionProducts ul {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  #sectionProducts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #sectionProducts li {
+    width: 31%;
+  }
+}
+
+@media (max-width: 700px) {
+  #showCase {
+    padding-top: 1px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
