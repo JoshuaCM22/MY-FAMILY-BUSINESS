@@ -1,7 +1,7 @@
 # MY FAMILY BUSINESS
 
 * Purpose: My Project
-* Front End: HTML5, CSS3
+* Front End: HTML5, SASS, CSS3
 * Responsive Web Design: Yes
 * Type of Website: Static
 
